@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-1fN1ig1yF)
 - Live Site URL: [GitHub Pages](https://sh4rdu1-git.github.io/fm-stats-preview-card-component/)
 
 ## My process
