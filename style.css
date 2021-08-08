@@ -26,22 +26,23 @@ body {
 }
 
 img {
+  height: 100%;
   width: 100%;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .container {
+  margin: 50px;
   display: flex;
   flex-direction: column;
-  margin: 5%;
   border-radius: 10px;
   overflow: hidden;
   background-color: var(--dark-desaturated-blue);
 }
 
 .picture {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   background-size: cover;
   line-height: 0;
   position: relative;
@@ -49,6 +50,7 @@ img {
 
 .overlay {
   background-color: var(--soft-violet);
+  opacity: 75%;
   width: 100%;
   height: 100%;
   top: 0;
@@ -58,7 +60,7 @@ img {
 }
 
 .text {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -66,8 +68,8 @@ img {
   color: var(--white);
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 1.8em;
-  padding-bottom: 10px;
+  /* font-size: 1.8em; */
+  padding: 10px 0px;
 }
 
 .accent {
@@ -78,19 +80,19 @@ img {
   color: var(--slightly-transparent-white-para);
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 0.9em;
-  padding-bottom: 10px;
+  /* font-size: 0.9em; */
+  padding: 10px 0px;
 }
 
 .stat-item {
-  padding-bottom: 10px;
+  padding: 10px 0px;
 }
 
 .stat-title {
   color: var(--slightly-transparent-white-stat);
   text-transform: uppercase;
   font-family: "Lexend Deca", sans-serif;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
 }
 
 .stat-value {
@@ -112,4 +114,26 @@ img {
 
 /* Styling for larger screens */
 @media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+
+  .picture {
+    flex-grow: 0;
+    width: 100%;
+    height: 550px;
+  }
+
+  .text {
+    text-align: left;
+    line-height: 30px;
+    padding: 0px 50px;
+    margin: auto;
+  }
+
+  .statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
